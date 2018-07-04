@@ -37,7 +37,7 @@ public class DataAnalysisServiceImplementation implements DataAnalysisServiceInt
 
     @Override
     public void startKafkaTerminalCommandsFromJava(String topicName, String outputTopicName) {
-        String command_to_run = "sh /Users/khanhafizurrahman/Desktop/ThesisFinalCode/KafkaStreamAnalysis/kafka_start.sh " + topicName + " " + outputTopicName;
+        String command_to_run = "sh /Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/KafkaStreamAnalysis/kafka_start.sh " + topicName + " " + outputTopicName;
         Runtime rt = Runtime.getRuntime();
         printOutput outputMessage, errorReported;
 
@@ -142,7 +142,7 @@ public class DataAnalysisServiceImplementation implements DataAnalysisServiceInt
         System.out.println("inside submitPysparkProjectTerminalCommand");
         System.out.println(app_name + '\t' +  master_server + '\t' + kafka_bootstrap_server + '\t' + subscribe_topic + '\t' + subscribe_output_topic + '\t' + fieldNameListNameAsString + '\t' + fieldTypeListNameAsString);
 
-        String command_to_run = "sh /Users/khanhafizurrahman/Desktop/ThesisFinalCode/KafkaStreamAnalysis/spark_start.sh "
+        String command_to_run = "sh /Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/KafkaStreamAnalysis/spark_start.sh "
                 + app_name + " "
                 + master_server + " "
                 + kafka_bootstrap_server + " "

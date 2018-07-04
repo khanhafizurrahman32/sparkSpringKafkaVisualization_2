@@ -188,64 +188,6 @@ class MultipleFormInput extends Component {
       })
       globalArray.push(input)
     }
-
-    console.log(globalArray)
-    
- 
-
-    // input_array is a multi dimensional where external length is 1 and inner length is 50: inner length is
-    // of type String thats why we convert each into object
-    /*console.log("input_array")
-    input_array.forEach(function(elem){
-      console.log(elem)
-      elem.forEach(function(inner_elem){
-        input_array_json.push(JSON.parse(inner_elem))
-      })
-    })
-
-    let total_keys = Object.keys(input_array_json[0]).length
-    console.log('total_keys', total_keys)*/
-    
-    // we try to have final array like this: column header_1:[], column header_2:[] therefore we first create
-    // the inner array and push inner array into final array
-    /*for (let i=0; i<total_keys; i++){
-      input_array_json.forEach(function(elem){
-        let individual_object_array = elem[(Object.keys(input_array_json[0]))[i]]
-        individual_object_array.forEach(function(elem){
-          arr.push(elem);
-        })
-        if(arr.length === 50){
-          if (this.checkallElementsoofArrayEqualorNot(arr) != true)
-            globalArray.push(arr); 
-          arr = []
-        }
-        //arr.push(elem[(Object.keys(input_array_json[0]))[i]]);
-      })
-    }*/
-
-    /*console.log(input_array_json.length);
-    input_array_json.forEach(function(elem){
-      let individual_object_array = elem[(Object.keys(input_array_json[0]))[0]]
-      console.log(individual_object_array)
-      console.log(individual_object_array[0].length)
-      for(let i =0; i <individual_object_array[0].length; i++){
-        let input = []
-        individual_object_array.forEach(function(elem){
-          input.push(elem[i])
-        })
-        globalArray.push(input)
-
-        if (globalArray[0].length === 50){
-        
-          
-        }
-      }
-    })*/
-    
-
-    globalArray.forEach(function(elem){
-      console.log(elem);
-    })
     return globalArray;
   }
 
@@ -283,7 +225,7 @@ class MultipleFormInput extends Component {
       data.length = 0;
       layout = {};
       console.log('parallel coordinates');
-      let response_vals = this.drawParallelCoordinates(this.state.vizualization_method,this.state.classLabels_numeric, data_for_drawing)
+      let response_vals = this.drawParallelCoordinates(this.state.vizualization_method,this.state.classLabels_numeric, data_for_drawing, "reduced")
       data = response_vals[0];
       layout = response_vals[1];
     }
@@ -404,17 +346,29 @@ class MultipleFormInput extends Component {
     });
   }
 
-  drawParallelCoordinates(vizualization_method, classLabels_numeric, drawingVals){
+  drawParallelCoordinates(vizualization_method, classLabels_numeric, drawingVals, drawType){
     console.log('drawParallelCoordinates:: parameters ->', vizualization_method, classLabels_numeric, drawingVals);
     let return_vals = [];
     const dimensions_array = [];
     let header_names = this.state.headerFiles;
     for(let i = 0; i <drawingVals.length; i++){
-      let obj = {
-        range: [Math.floor(Math.min(...drawingVals[i])), Math.ceil(Math.max(...drawingVals[i]))],
-        label: header_names[i],
-        values: drawingVals[i]
+      let obj;
+      if (drawType === "raw"){
+        console.log(drawType);
+        obj = {
+          range: [Math.floor(Math.min(...drawingVals[i])), Math.ceil(Math.max(...drawingVals[i]))],
+          label:header_names[i],
+          values: drawingVals[i]
+        }
+      }else if(drawType === "reduced"){
+        console.log(drawType);
+        obj = {
+          range: [Math.floor(Math.min(...drawingVals[i])), Math.ceil(Math.max(...drawingVals[i]))],
+          label: "lda_" + i,
+          values: drawingVals[i]
+        }
       }
+      
       dimensions_array.push(obj);
     }
     let data = [{
@@ -495,7 +449,7 @@ class MultipleFormInput extends Component {
     } else if (vizualization_method === "parcoords"){
       data.length = 0;
       layout = {};
-      let response_vals = this.drawParallelCoordinates(vizualization_method, classLabels_numeric, drawingVals);
+      let response_vals = this.drawParallelCoordinates(vizualization_method, classLabels_numeric, drawingVals,"raw");
       data = response_vals[0];
       layout = response_vals[1];
     }
