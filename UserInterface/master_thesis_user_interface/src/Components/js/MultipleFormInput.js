@@ -220,7 +220,7 @@ class MultipleFormInput extends Component {
           type: this.state.vizualization_method
         }
       ];
-      layout =  {width: 400, height: 500, title: 'Reduced Visualization'} 
+      layout =  {width: 600, height: 500, title: 'Reduced Visualization'} 
     }else if (this.state.vizualization_method === "parcoords") {
       data.length = 0;
       layout = {};
@@ -402,7 +402,7 @@ class MultipleFormInput extends Component {
     let fieldNamesArray = this.state.headerFiles;
     let drawingVals = [];
     for (let i =0; i<(fieldNamesArray.length-1); i++){
-      drawingVals.push(this.unpackRows(objArray, fieldNamesArray[i]));
+        drawingVals.push(this.unpackRows(objArray, fieldNamesArray[i]))
     }
     let classLabels = drawingVals.pop();
     this.setState({value_for_raw_viz: drawingVals})

@@ -139,7 +139,7 @@ def dimensionality_reduction(inputSchema_output):
         null_columns = df1.columns[df1.isnull().any()]
         print null_columns
         df1 = df1.drop(null_columns, axis=1)
-        Y = DataFrame(df1['class'])
+        Y = DataFrame(df.iloc[:,-2].values)
         y = np.ravel(Y.values)
         feature_val_array = df1['feature_values']
         columns = createColumns(feature_val_array.values[0].shape[0])
@@ -150,12 +150,15 @@ def dimensionality_reduction(inputSchema_output):
         #X_lda_sklearn = sklearn_lda.fit(X,y).transform(X)
         X_lda_sklearn_df = DataFrame(X_lda_sklearn) # pandas.core.frame.DataFrame
         print(list(X_lda_sklearn_df))
-        output_df = renameCols(df,X_lda_sklearn_df)
+        col_names = list(df)
+        output_df = DataFrame(columns = col_names)
+        """output_df = renameCols(df,X_lda_sklearn_df)
         print(list(output_df))
         output_df = arrangeDatasets(df,output_df) 
-        col_names =  list(output_df)
+        col_names =  list(output_df)"""
         output_df[col_names[0]] = X_lda_sklearn.tolist()
         output_df[col_names[1]] = Y.values
+        output_df[col_names[2]] = ''
         return output_df
     return traditional_LDA
 

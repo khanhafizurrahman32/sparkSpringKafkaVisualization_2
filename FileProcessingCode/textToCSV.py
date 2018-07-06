@@ -35,19 +35,25 @@ for action_dir in os.listdir("/Users/khanhafizurrahman/Desktop/ThesisFinalCode/D
 
 output_csv_list = []
 
-for action_dir in os.listdir("/Users/khanhafizurrahman/Desktop/ThesisFinalCode/Dataset_I_used/activity_recognition_csv/"):
+for action_dir in os.listdir("/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Dataset_I_used/activity_recognition_csv_drive/"):
     if action_dir != '.DS_Store':
         i = 0
         person_csv_list = []
-        for person_dir in os.listdir("/Users/khanhafizurrahman/Desktop/ThesisFinalCode/Dataset_I_used/activity_recognition_csv/" + action_dir + "/"):
+        for person_dir in os.listdir("/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Dataset_I_used/activity_recognition_csv_drive/" + action_dir + "/"):
             if person_dir != '.DS_Store':
                 pd_csv_list = []
-                for file_path in os.listdir("/Users/khanhafizurrahman/Desktop/ThesisFinalCode/Dataset_I_used/activity_recognition_csv/" + action_dir + "/" + person_dir + "/"):
+                count = 0
+                for file_path in os.listdir("/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Dataset_I_used/activity_recognition_csv_drive/" + action_dir + "/" + person_dir + "/"):
                     if file_path != '.DS_Store':
-                        write_file_path = "/Users/khanhafizurrahman/Desktop/ThesisFinalCode/Dataset_I_used/activity_recognition_csv/" + action_dir + "/" + person_dir + "/" + file_path
+                        write_file_path = "/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Dataset_I_used/activity_recognition_csv_drive/" + action_dir + "/" + person_dir + "/" + file_path
+                        if count > 11:
+                            break
                         input_df = pd.read_csv(write_file_path)
+                        """input_df = input_df.head(25)
+                        print input_df"""
                         pd_csv_list.append(pd.DataFrame(input_df.values.reshape(1,-1), index= None))
                         output_df = pd.concat(pd_csv_list)
+                        count = count + 1
                       
                 if action_dir == 'a01':
                     output_df ['class'] = 'sitting'
@@ -97,6 +103,9 @@ for action_dir in os.listdir("/Users/khanhafizurrahman/Desktop/ThesisFinalCode/D
         output_csv_list.append(person_output_df)
     
 print len(output_csv_list)
+for i in range(len(output_csv_list)):
+    print i
+    output_csv_list[i].shape
 final_output_df = pd.concat(output_csv_list)
 print final_output_df.shape
 final_output_arr = final_output_df.values
@@ -106,7 +115,7 @@ np.random.shuffle(final_output_arr)
 print final_output_arr.shape
 final_output_df_shuffle = pd.DataFrame(final_output_arr)
 print final_output_df_shuffle.shape
-final_output_df_shuffle.to_csv('/Users/khanhafizurrahman/Desktop/ThesisFinalCode/Dataset_I_used/activity_recognition_csv/merged.csv', index = False)
+final_output_df_shuffle.to_csv('/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Dataset_I_used/activity_recognition_csv_drive//merged.csv', index = False)
 
 
 

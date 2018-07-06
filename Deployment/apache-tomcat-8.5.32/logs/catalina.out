@@ -1,0 +1,104 @@
+04-Jul-2018 17:11:08.397 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.32
+04-Jul-2018 17:11:08.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 20 2018 19:50:35 UTC
+04-Jul-2018 17:11:08.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.32.0
+04-Jul-2018 17:11:08.400 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Jul-2018 17:11:08.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.13.5
+04-Jul-2018 17:11:08.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Jul-2018 17:11:08.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre
+04-Jul-2018 17:11:08.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_51-b16
+04-Jul-2018 17:11:08.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Jul-2018 17:11:08.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32
+04-Jul-2018 17:11:08.401 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32
+04-Jul-2018 17:11:08.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/conf/logging.properties
+04-Jul-2018 17:11:08.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jul-2018 17:11:08.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jul-2018 17:11:08.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jul-2018 17:11:08.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jul-2018 17:11:08.402 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jul-2018 17:11:08.403 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32
+04-Jul-2018 17:11:08.405 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32
+04-Jul-2018 17:11:08.406 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/temp
+04-Jul-2018 17:11:08.407 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/khanhafizurrahman/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+04-Jul-2018 17:11:08.828 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jul-2018 17:11:08.899 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jul-2018 17:11:08.928 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Jul-2018 17:11:08.930 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jul-2018 17:11:08.931 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1555 ms
+04-Jul-2018 17:11:08.986 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jul-2018 17:11:08.987 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.32
+04-Jul-2018 17:11:09.006 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/docs]
+04-Jul-2018 17:11:09.827 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/docs] has finished in [821] ms
+04-Jul-2018 17:11:09.833 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/manager]
+04-Jul-2018 17:11:09.894 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/manager] has finished in [66] ms
+04-Jul-2018 17:11:09.894 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/examples]
+04-Jul-2018 17:11:10.585 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/examples] has finished in [691] ms
+04-Jul-2018 17:11:10.586 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/ROOT]
+04-Jul-2018 17:11:10.635 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/ROOT] has finished in [48] ms
+04-Jul-2018 17:11:10.635 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/host-manager]
+04-Jul-2018 17:11:10.695 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/host-manager] has finished in [59] ms
+04-Jul-2018 17:11:10.700 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jul-2018 17:11:10.714 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+04-Jul-2018 17:11:10.716 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1785 ms
+04-Jul-2018 17:17:40.862 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/manager]
+04-Jul-2018 17:17:40.890 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/manager]
+04-Jul-2018 17:17:40.923 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/manager] has finished in [33] ms
+04-Jul-2018 17:18:30.948 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/host-manager]
+04-Jul-2018 17:18:30.954 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/host-manager]
+04-Jul-2018 17:18:30.975 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/host-manager] has finished in [21] ms
+04-Jul-2018 17:20:55.193 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jul-2018 17:20:55.195 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jul-2018 17:20:55.254 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Jul-2018 17:20:55.307 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jul-2018 17:20:55.352 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jul-2018 17:20:55.357 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Jul-2018 17:20:55.359 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Jul-2018 17:20:55.359 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+04-Jul-2018 17:22:19.859 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.32
+04-Jul-2018 17:22:19.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 20 2018 19:50:35 UTC
+04-Jul-2018 17:22:19.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.32.0
+04-Jul-2018 17:22:19.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Mac OS X
+04-Jul-2018 17:22:19.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.13.5
+04-Jul-2018 17:22:19.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86_64
+04-Jul-2018 17:22:19.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_51.jdk/Contents/Home/jre
+04-Jul-2018 17:22:19.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_51-b16
+04-Jul-2018 17:22:19.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+04-Jul-2018 17:22:19.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32
+04-Jul-2018 17:22:19.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32
+04-Jul-2018 17:22:19.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/conf/logging.properties
+04-Jul-2018 17:22:19.864 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+04-Jul-2018 17:22:19.864 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+04-Jul-2018 17:22:19.864 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+04-Jul-2018 17:22:19.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+04-Jul-2018 17:22:19.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+04-Jul-2018 17:22:19.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32
+04-Jul-2018 17:22:19.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32
+04-Jul-2018 17:22:19.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/temp
+04-Jul-2018 17:22:19.866 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/khanhafizurrahman/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+04-Jul-2018 17:22:20.038 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+04-Jul-2018 17:22:20.066 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jul-2018 17:22:20.077 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+04-Jul-2018 17:22:20.079 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+04-Jul-2018 17:22:20.080 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 706 ms
+04-Jul-2018 17:22:20.110 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+04-Jul-2018 17:22:20.110 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.32
+04-Jul-2018 17:22:20.117 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/docs]
+04-Jul-2018 17:22:20.498 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/docs] has finished in [380] ms
+04-Jul-2018 17:22:20.501 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/manager]
+04-Jul-2018 17:22:20.545 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/manager] has finished in [46] ms
+04-Jul-2018 17:22:20.545 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/examples]
+04-Jul-2018 17:22:20.985 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/examples] has finished in [440] ms
+04-Jul-2018 17:22:20.985 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/ROOT]
+04-Jul-2018 17:22:21.012 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/ROOT] has finished in [27] ms
+04-Jul-2018 17:22:21.012 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/host-manager]
+04-Jul-2018 17:22:21.036 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/Users/khanhafizurrahman/Desktop/ThesisFinalCodeBackup/Deployment/apache-tomcat-8.5.32/webapps/host-manager] has finished in [24] ms
+04-Jul-2018 17:22:21.039 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+04-Jul-2018 17:22:21.046 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+04-Jul-2018 17:22:21.049 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 968 ms
+04-Jul-2018 17:35:03.883 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+04-Jul-2018 17:35:03.890 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+04-Jul-2018 17:35:03.957 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+04-Jul-2018 17:35:04.010 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+04-Jul-2018 17:35:04.093 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+04-Jul-2018 17:35:04.100 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+04-Jul-2018 17:35:04.177 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+04-Jul-2018 17:35:04.179 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
